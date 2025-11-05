@@ -1,0 +1,14 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: #0f1115; color: #e6e9ef; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 16px 24px; border-bottom: 1px solid #222633; background: #11141a; position: sticky; top: 0; z-index: 10; }
+h1 { margin: 0; font-size: 18px; font-weight: 600; }
+.status { display: flex; gap: 16px; font-size: 12px; color: #aab1c3; }
+main { max-width: 960px; margin: 24px auto; padding: 0 16px; }
+.stage { position: relative; width: 100%; max-width: 800px; margin: 0 auto; aspect-ratio: 4 / 3; background: #0b0d12; border: 1px solid #1b2030; border-radius: 12px; overflow: hidden; }
+#video, #overlay { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+#emoji { position: absolute; right: 16px; bottom: 12px; font-size: 64px; filter: drop-shadow(0 4px 16px rgba(0,0,0,0.6)); user-select: none; }
+#label { position: absolute; left: 12px; bottom: 12px; background: rgba(17,20,26,0.8); border: 1px solid #2a3145; padding: 6px 10px; border-radius: 8px; font-size: 13px; color: #c8d0e0; }
+.controls { display: flex; gap: 16px; flex-wrap: wrap; margin: 16px auto; padding: 12px; background: #11141a; border: 1px solid #1b2030; border-radius: 12px; max-width: 800px; }
+.control { display: flex; align-items: center; gap: 8px; color: #c8d0e0; }
+input[type="range"], input[type="number"] { accent-color: #6ea8fe; background: transparent; color: #e6e9ef; border: 1px solid #2a3145; border-radius: 6px; padding: 4px; }
+footer { text-align: center; color: #9aa3b7; padding: 16px; }
